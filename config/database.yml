@@ -15,7 +15,10 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
   password: <%= ENV["SHANZHU_DATABASE_PASSWORD"] %>
-  socket: /tmp/mysql.sock
+  # local
+  # socket: /tmp/mysql.sock
+  # vultr
+  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
