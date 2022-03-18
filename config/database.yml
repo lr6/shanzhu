@@ -16,9 +16,9 @@ default: &default
   username: root
   password: <%= ENV["SHANZHU_DATABASE_PASSWORD"] %>
   # local
-  # socket: /tmp/mysql.sock
+  socket: /tmp/mysql.sock
   # vultr
-  socket: /var/lib/mysql/mysql.sock
+#  socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
