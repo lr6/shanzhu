@@ -115,6 +115,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.13.3-x86_64-linux)
       racc (~> 1.4)
+    pagy (5.10.1)
+      activesupport
     puma (5.6.2)
       nio4r (~> 2.0)
     racc (1.6.0)
@@ -168,6 +170,7 @@ DEPENDENCIES
   bootsnap
   debug
   mysql2 (~> 0.5)
+  pagy (~> 5.10)
   puma (~> 5.0)
   rails (~> 7.0.2, >= 7.0.2.3)
   tzinfo-data
